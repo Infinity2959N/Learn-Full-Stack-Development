@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+	<head>
+		<!--Cascading Style Sheets (Internal CSS)-->
+		<style>
+			body{
+				background-color: lightgrey;
+			}
+			h1 {
+				color: blue;
+				text-align: center;
+			}
+
+			p {
+				font-family: Arial, sans-serif;
+				font-size: 16px;
+			}
+
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			th, td {
+				border: 1px solid rgb(255, 0, 0);
+				padding: 8px;
+				text-align: left;
+			}
+
+			th {
+				background-color: #4b4b4b;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Heading tag -->
+		<h1> Heading 1 </h1>
+		<h2> Heading 2 </h2>
+		<h3> Heading 3 </h3>
+		<h4> Heading 4 </h4>
+		<h5> Heading 5 </h5>
+		<h6> Heading 6 </h6>
+
+		<!-- Paragraph -->
+		<p> This is a 
+		paragraph </p>
+
+		<!-- Bold and strong tags-->
+		<b> This is a bold tag </b>
+		<br>	<!--Line break-->
+		<strong> This is a strong tag </strong><br>
+
+		<!-- Italics and emphasis tags-->
+		<i> This is an italics tag </i><br>
+		<em> This is an emphasised tag </em><br>
+	
+		<!-- Underline and insert tag-->
+		<u> This is an underlined tag </u><br>
+		<ins> This is an insert tag </ins><br>
+
+		<!-- Marked tag -->
+		<mark> This is a marked tag </mark><br>
+
+		<!-- Strikethrough and delete tag-->
+		<s> This is an striked tag </s><br>
+		<del> This is a deleted tag </del><br>
+
+		<!--Hyperlink-->
+		<a href= https://www.kamaldhami.in> Mascot </a><br>
+
+		<!-- Super and subscript-->
+		E=mc<sup>2</sup> and water is H<sub>2</sub>O<br>		
+
+		<!--Marquee tag-->
+		<marquee> This tag will scroll from right to left </marquee><br>
+		<marquee direction="right" scrollamount="30"> This tag will scroll from left to right </marquee><br>
+
+		<!-- Drawing shapes: pre tag-->
+		<pre>
+			*
+		*	*	*
+	*	*	*	*	*
+		</pre>
+
+		<!-- Center tag-->
+		<center> This will come in the center </center>
+		<center>*</center>
+		<center>*    *    *</center>
+		<center>*</center>
+		<center>*</center>
+		<center>*</center>
+
+		<!-- Lists-->
+		<!-- Unordered list-->
+		<ul type="circle">		<!-- Types: disc (default), circle, square-->
+			<li>Li1</li>
+			<li>Li2</li>
+			<li>Li3</li>
+		</ul>
+
+		<!-- Unordered list-->
+		<ol type='A' start='6'>
+			<li>Li1</li>
+			<li>Li2</li>
+			<li>Li3</li>
+		</ol>
+
+		<!-- Descriptive list-->
+		<dl>
+		<dt> Smartphones </dt>
+		<dd> Samsung Apple Papaya</dd>
+		</dl>
+
+		<!-- Image-->
+		<img src="img link" height="300px" alt='Imagine an image here'>
+
+		<!-- Table -->
+		<table border='1'>
+			<thead>
+				<tr>
+					<th colspan="2">Name</th>
+					<th rowspan="2" width="50" align="center">Age</th>
+				</tr>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>B</td>
+					<td>Infinity</td>
+					<td align="center">20</td>
+				</tr>
+				<tr>
+					<td>Hemlata</td>
+					<td>Ain</td>
+					<td align="center">09</td>
+				</tr>
+				<tr>
+					<td>Lotus</td>
+					<td>Dhami</td>
+					<td align="center">20</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<td></td>
+				<td>Age sum=</td>
+				<td align="center">49</td>
+			</tfoot>
+		</table>
+
+		<!-- Creating a hotmap (HTML image maps) -->
+		<!-- For rectangle coords are (x_top_left,y_top_left), (x_bottom_right, y_bottom_right)-->
+		<!-- For circle coords are (x_center, y_center), radius-->
+		<!-- For any polygon (area shape= "poly") x1, y1, x2, y2, x3, y3, ..., x1, y1-->
+		<!-- Imagemap.net is a website worth looking. Will generate the code for your image -->
+		<map name="workmap">
+			<area shape="rect" coords="34,44,270,350" href="https://www.w3schools.com/html/computer.htm" target="_blank" alt="computer">
+			<area shape="rect" coords="290, 172, 333, 250" href="https://www.w3schools.com/html/phone.htm" target="_blank" alt="mobile">
+			<area shape="circle" coords="337, 300, 44" href="https://www.w3schools.com/html/coffee.htm" target="_blank" alt="coffee mug">
+		</map>
+
+		<img src="https://www.w3schools.com/html/workplace.jpg" alt="'workplace" usemap="'#workmap">
+
+		<!-- Lab manual Q3-->
+		<table border="1">
+			<thead>
+				<tr>
+					<th rowspan="2">Sr.No.</th>
+					<th rowspan="2">Course</th>
+					<th rowspan="2">Subject</th>
+					<th colspan="2">Sr.No.</th>
+					<th colspan="2">Sr.No.</th>
+					<th rowspan="2">Practical / Theory</th>
+				</tr>
+
+				<tr>
+					<th>Internal</th>
+					<th>External</th>
+					<th>Internal</th> 
+					<th>External</th>
+				</tr>
+
+			</thead>
+
+			<tbody>
+				<tr>
+					<td rowspan="4">1</td>
+					<td rowspan="4">MBA</td>
+					<td>Management Accounting</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>Theory</td>
+				</tr>
+				<tr>
+					<td>Information Technology</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>T and P</td>
+				</tr>
+				<tr>
+					<td>Basics of Marketing</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>Theory</td>
+				</tr>
+				<tr>
+					<td>E-Commerce</td>
+					<td>50</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>-</td>
+					<td>Theory</td>
+				</tr>
+
+				<tr>
+					<td rowspan="6">2</td>
+					<td rowspan="6">MCM</td>
+					<td>Visual Basic</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>T and P</td>
+				</tr>
+				<tr>
+					<td>Internet Technology</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>T and P</td>
+				</tr>
+				<tr>
+					<td>Network Technology</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>Theory</td>
+				</tr>
+				<tr>
+					<td>VB.Net</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>Theory</td>
+				</tr>
+				<tr>
+					<td>Linux</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>T and P</td>
+				</tr>
+				<tr>
+					<td>ISA</td>
+					<td>50</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>-</td>
+					<td>Theory</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!--Experiments with rowspan and colspan-->
+		<table border="1" width="200" height="100" cellspacing="0">
+			<tbody align="center">
+				<tr>
+					<td rowspan="2">1.1</td>
+					<td>1.2</td>
+				</tr>
+				<tr>
+					<td rowspan="2">2.2</td>
+				</tr>
+				<tr>
+					<td>31.</td>
+				</tr>
+				<tr>
+					<td colspan="2">4.1</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<img src
+	</body>
+</html>

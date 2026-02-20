@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Forms
+    </title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Basic Information</legend>
+            <p>    
+                Full Name
+                <input type="text" id="name" name="fullname">
+            </p>
+            <p>Birth Date: 
+                <input type="date" id="date" name="birthdate">
+            </p>
+            <p>
+                Gender:
+                <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                <input type="radio" name="gender" id="pns"><label for="pns">Prefer Not To Say</label>
+            </p>
+                Permanent Address: 
+                <input type="text" id="address" name="address">
+            </p>
+            <p>
+                Phone Number: 
+                <input type="number" id="ph" name="phonenumber">
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Extra Information</legend>
+            <p>
+                Course:
+                <select name="course" id="course">
+                    <option value="btech">BTech</option>
+                    <option value="mtech">MTech</option>
+                    <option value="bba">BBA</option>
+                    <option value="mba">MBA</option>
+                </select>
+            </p>
+            <p>
+                Self Introduction:
+                <textarea name="intro" id="intro"></textarea>
+            </p>
+            <p>
+                Interests:
+                <input type="checkbox" name="interest" id="books"> Books
+                <input type="checkbox" name="interest" id="manhwas"> Manhwa
+                <input type="checkbox" name="interest" id="sports"> Sports
+            </p>
+            <p>
+                Favourite Color:
+                <input type="color" name="color" id="color">
+            </p>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>

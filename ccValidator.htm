@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <label for="card"> Credit Card Number:</label>
+    <input type="number" id="card" name="card">
+    <br><br>
+    <button onclick="validate()">Submit</button>
+    <script>
+        function validate(){
+            var cc= document.getElementById("card").value;
+            var mastercard = /^(5[1-5]\d{14})$/;
+            var visa= /^(4\d{12}(\d{3})?)$/;
+            if(mastercard.test(cc)){
+                alert("MasterCard");
+            }
+            else if(visa.test(cc)){
+                alert("Visa");
+            }
+            else{
+                alert("Invalid Card Number");
+            }
+        }
+    </script>
+</body>
+</html>

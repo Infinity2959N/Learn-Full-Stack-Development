@@ -1,0 +1,48 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Form</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Hotel Registration</legend>
+            <p>
+                Customer's Name:
+                
+                <input type="text" name="name" id="cname">
+            </p>
+            <p>
+                Permanent Address:
+                <input type="text" name="address" id="address">
+            </p>
+            <p>
+                Phone Number:
+                <input type="number" name="number" id="phonenumber">
+            </p>
+            <p>
+                Gender: <br>
+                <input type="radio" name="gender" id="male"> Male
+                <input type="radio" name="gender" id="female"> Female
+                <input type="radio" name="gender" id="oth"> Other
+                <input type="radio" name="gender" id="pns"> Prefer Not To Say
+            </p>
+            <p>
+                Room For: <br>
+                <input type="radio" name="room" id="one"> One
+                <input type="radio" name="room" id="two"> Two
+            </p>
+            <p>
+                Room Type: <br>
+                <input type="text" name="roomtype" id="roomtype" list="roomtypes">
+                <datalist id="roomtypes">
+                    <option value="Non A/C">
+                    <option value="AC">
+                    <option value="Deluxe">
+                </datalist>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

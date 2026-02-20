@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- Internal CSS-->
+    <style>
+        h2{
+            color: blue;
+            background-color: yellow;
+            width: 200px;
+        }
+        /* Higher priority */
+        .class-name{    
+            color: green;
+        }
+        /* Much higher priority */
+        #ids{
+            color: aqua;
+        }
+
+        /* Creating a box with rounded corners */
+        h3{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 10px 30px;
+            box-shadow: 5px 5px 10px grey;
+        }
+
+        /* Styling anchor tags: By default blue, after visiting purple, and on hover red */
+        a{
+            color: green;
+            text-decoration: none;
+        }
+        a:visited{
+            color: pink;
+        }
+        a:hover{
+            color: red;
+        }
+
+        /* Problem: Create a circle (h1), when you hover on it it becoms a square*/
+        h1{
+            width: 200px;
+            height: 200px;
+            background-color: plum;
+            border-radius: 50%;
+            box-shadow: 6px 6px 20px plum;
+            transition: background-color 1s ease-in-out, border-radius 0.5s ease ; /* Smooth transition */
+        }
+        h1:hover{
+            background-color: magenta;
+            box-shadow: 6px 6px 20px magenta;
+            border-radius: 5%; /* Becomes a square on hover */
+            transform: /*rotate(45deg)*/ translate(100px, -200px);
+        }
+    </style>
+
+    <!--External CSS-->
+    <link href= "tut.css" rel="stylesheet">
+</head>
+<body>  
+    <!--Inline CSS (has highest priority)-->
+    <h1 style="color: red; text-shadow: 6px 6px 20px brown;">Inline CSS</h1>
+
+    <h2> Internal CSS </h2>
+
+    <h3 class="class-name"> External CSS </h3>
+
+    <h4 id="ids"> ID Selector </h4>
+
+    <h4 id="id-name"> ID Selector (External) </h4>
+
+    <h3></h3>
+
+    <a href="https://google.com">Google</a>
+
+    <h1></h1>
+</body>
+</html>

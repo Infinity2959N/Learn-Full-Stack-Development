@@ -1,0 +1,16 @@
+h1{
+    color: blanchedalmond;
+    background-color: plum;
+}
+h2{
+    color: blueviolet;
+    background-color: lightsteelblue;
+}
+.class-name{
+    color: black;
+    background-color: lightgray;
+}
+#id-name{
+    color: white;
+    background-color: black;
+}
