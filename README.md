@@ -4,29 +4,21 @@ This repository contains class practice files and assignments for learning core 
 
 ## Contents
 
-- HTML practice pages (`*.htm`)
-- CSS notes and examples (`css.md`, `tut.css`, etc.)
-- JavaScript and DOM notes (`js.md`, `dom.md`, `jQuery.md`)
-- PHP and XML notes (`php.md`, `xml.md`)
+- HTML practice pages in `html/`
+- CSS notes and examples in `css/`
+- JavaScript and DOM notes in `js/`
+- PHP notes in `php/`
+- XML notes in `xml/`
+- Assignment markdown in `docs/`
 
-## Current Files
+## Folder Structure
 
-- `assignment1.md`
-- `background_img.htm`
-- `ccValidator.htm`
-- `css.md`
-- `cssPositionProperties.htm`
-- `cssTut.htm`
-- `dom.md`
-- `form.htm`
-- `hotelform.htm`
-- `jQuery.md`
-- `js.md`
-- `learnHTML.htm`
-- `php.md`
-- `semanticTags.htm`
-- `tut.css`
-- `xml.md`
+- `html/` — all `.htm` practice pages
+- `css/` — `css.md`, `tut.css`
+- `js/` — `js.md`, `dom.md`, `jQuery.md`
+- `php/` — `php.md`
+- `xml/` — `xml.md`
+- `docs/` — `assignment1.md`
 
 ## How to use
 
