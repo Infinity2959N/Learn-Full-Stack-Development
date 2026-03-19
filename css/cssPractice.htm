@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<head>
+		<title>CSS practice</title>
+		<style>
+			/*Q1. All hyperlinks with: default color pink, active color blue, visited color green, no underline*/
+			a{
+				color: orange;
+				text-decoration: none;
+			}
+			a:hover{
+				color: pink;
+			}
+			a:active{
+				color: blue;
+			}
+			a:visited{
+				color: green;
+			}
+			/* Q2, Q3. Box shadow with rounded corners and text shadow */
+			.box{
+				width: 300px;
+				height: 100px;
+				background-color: lightblue;
+				box-shadow: 10px 20px 30px gray;
+				/*text-align: center;*/
+				/*use flexbox to center the text*/
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 20px;
+				border-radius: 20px;
+			}
+			.text{
+				font-size: 40px;
+				text-shadow: 3px 3px 5px black;
+			}
+			/*Q4. Newspaper Layout:*/
+			.article-content{
+				column-count: 3;	/*Divides the column into 3 columns*/
+				column-gap: 40px;	/*40px space between columns*/
+				column-rule: 1px solid #aaa;	/*A light gray dividing line*/
+				text-align: justify;	/*Use the entire row for text*/
+				font-family: georgia;
+			}
+
+			/*Q5. Transition: blue circle to pink square with rounded corners*/
+			.circle{
+				width: 200px;
+				height: 200px;
+				background-color: lightblue;
+				border-radius: 50%;
+				box-shadow: 5px 5px 100px blue;
+				transition: all 1s ease-in-out;
+			}
+			.circle:hover{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+				border-radius: 10%;
+				box-shadow: 5px 5px 100px red;
+			}	
+		</style>
+	</head>
+	<body>
+		<h1>Hyperlinks</h1>
+		<a href="www.google.com">Link 1</a>
+		<a href="linkedin.com">Link 2</a>
+		<a href="gmail.com">Link 3</a>
+		
+		<div class="box">Box Shadow</div>
+		<div class="text">Text Shadow</div>
+		
+		<div class=" circle"></div>
+
+		<article class="article-content">
+			India is one of the fastest growing countries in the world with a strong focus on technology, education, and innovation. The rapid advancement in information technology has transformed the way people communicate, work and live.
+		</article>
+	</body>
+</html>

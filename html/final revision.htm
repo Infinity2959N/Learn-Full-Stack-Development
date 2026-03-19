@@ -1,0 +1,94 @@
+<!--Q1. Demonstrate text formatting tags-->
+<!--Q2. <pre> kuch bhi </pre>-->
+<!--Q3. table-->
+<html>
+<head>
+<title>HTML practice</title>
+</head>
+<body>
+<strong><em><del><ins>Table</ins></del></em></strong>
+<table border="1" cellpadding="4">
+<thead>
+<tr>
+<th rowspan="2">Sr. No.</th>
+<th rowspan="2">Course</th>
+<th rowspan="2">Subject</th>
+<th colspan="2">Marks</th>
+<th colspan="2">Category</th>
+<th rowspan="2">Practical/Theory</th>
+</tr>
+<tr>
+<th>Internal</th>
+<th>External</th>
+<th>Internal</th>
+<th>External</th>
+</tr>
+</thead>
+<table>
+<hr>
+<!--Q5. Imagemap-->
+<strong><center>Imagemap</center></strong>
+
+<img src="C:/Users/HP/Pictures/sample/shapes.png" alt="image" width="1000px" usemap=#imagemap>		<!--Using different width and height changes the coords, hence it will not work-->
+<map name="imagemap">
+	<area shape="rect" coords="853,645,1725,1513" alt="square" href="square.htm">
+	<area shape="circle" coords="2661,757,344" alt="circle" href="circle.htm">
+	<area shape="poly" coords= "2593,1433,2505,1645,2245,1645,2373,2013,2801,2045,2941,1657" alt="star" href="star.htm">
+</map>
+<hr>
+<!--Q6, 7. Form-->
+<strong><center>Learn form very properly with all the main functions</center></strong> 
+<form action="/submit-path" method="POST">
+	<fieldset>
+		<legend> Basic Information</legend>
+		<label for="name">Full Name</label>
+		<input type="text" id="name" name="fullname"><br><br>
+		<label for="dob">Enter Birth Date</label>
+		<input type="date" id="dob" name="birthdate"><br><br>
+		<label for="gender">Select Gender</label>
+		<input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br><br>
+<!-- Check out input for address and phone, as well as id and name for radio.  "Label" is always paired with "id"-->
+<!-- id is for client side identification, used by css and js (eg. document.getElementById), name is server side. Does not have to be unique, but required for radio groups. This is the key sent to server-->
+		<label for="address">Enter Address</label>
+		<textarea id="address" name="address"></textarea><br><br>
+`		<label for="city">City: </label>
+		<input list="cities" id="city" name="customer_city">
+		<datalist id="cities">
+			<option value="Delhi">
+			<option value="Pune">
+			<option value="Bangalore">
+		</datalist><br><br>
+		<label for="car">Select car type</label>
+		<select id="car" name="car">
+			<option value="sedan">Sedan</option>
+			<option value="hatchback">Hatchback</option>
+			<option value="suv">SUV</option>
+		</select><br><br>
+<!--datalist vs select: select is a closed list, user must chose a given option. Datalist is an "autocomplete" feature. user sees suggestions but can still type entirely different-->
+		<label for="phone">Phone Number</label>
+		<input type="tel" id="phone" name="phone">
+	</fieldset>
+	<fieldset>
+		<legend>Extra Information</legend>
+		<label for="interest">Interests</label>
+		<input type="checkbox" id="books" name="interest" value="books"><label for="books">Books</label>
+		<input type="checkbox" id="movies" name="interest" value="movies"><label for="movies">Movies</label>
+		<input type="checkbox" id="games" name="interest" value="games"><label for="games">Games</label><br><br>
+		<label for="color">Select your favourite color</label>
+		<input type="color" id="color" name="favouritecolor">
+	</fieldset>
+	<button type="submit">Send Data</button>
+	<button type="reset">Reset Form</button>
+</form>
+</form>
+<hr>
+<!--Q8 Video tag, embed tag-->
+<video controls autoplay muted width="500">
+<source src="link">
+</video>
+<embed src="link" type="application/pdf" width="500">
+
+<!-- Q9: Simple nested ul and ol, with multiple li-->
+</body>
+</html>

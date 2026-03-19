@@ -1,6 +1,6 @@
 # PHP (HyperText Preprocessor)
 
-Widely used open source serer sode scripting language that is especially suited for web development and can be embedded into HTML..
+Widely used open source server code scripting language that is especially suited for web development and can be embedded into HTML..
 PHP scripts are executed on the server, and the result is returned to the browser as plain HTML. It is a powerful tool for making dynamic and interactive web pages. PHP is also used for command-line scripting and can be used in standalone graphical applications. It supports a wide range of databases, making it a popular choice for web developers.
 
 ## Basic Syntax
@@ -8,6 +8,7 @@ PHP scripts are executed on the server, and the result is returned to the browse
 ```php
 <?php
 echo "Hello, World!";
+$x+$y= $z;
 ?>
 ```
 
@@ -20,7 +21,7 @@ In this example, the `<?php` tag indicates the start of a PHP script, and `?>` i
 **Current Version: PHP 8.2 (as of June 2024)**
 New Features in PHP 8.2:
 
-- Readonly classes: Classes that cannot be extended or instantiated.
+- Read only classes: Classes that cannot be extended or instantiated.
 - Disjunctive Normal Form Types: Allows for more complex type declarations.
 - Deprecation of dynamic properties: Dynamic properties are now deprecated, encouraging developers to declare properties explicitly.
 - Performance improvements and bug fixes.
@@ -127,6 +128,10 @@ echo "My name is $name and I am $age years old.";
 
 In this example, we declare two variables, `$name` and `$age`, and assign them values. We then use the `echo` statement to output a string that includes the values of these variables.
 
+## Decision Making
+
+Decision making is an important part of programming, allowing the program to execute different actions based on the conditions. In php, decision making helps control the flow of program by executing different blocks of code, depeding on certain conditions or expressions. Php provides several constructs for decision making including if-elseif-else, and switch. These **control structures** can be used to make logical decisions.
+
 ## Control Structures
 
 ```php
@@ -142,6 +147,7 @@ if ($number > 0) {
 ?>
 ```
 
+if (check and execute), if-else (`is` and `not is` conditon), if-elseif-else (for multiple conditions), switch-case (better way to write if-elseif-else for multiple decisions for a same variable).
 In this example, we use an `if` statement to check if the variable `$number` is greater than, less than, or equal to zero, and output a corresponding message.
 
 ## Functions
@@ -167,3 +173,40 @@ echo $fruits[0]; // Output: Apple
 ```
 
 In this example, we create an array called `$fruits` that contains three elements. We then access the first element of the array using its index (0) and output it.
+
+In php, there are 3 types of arrays: indexed arrays (numerically indexed), associative arrays (key-value pairs), and multidimensional arrays (arrays containing other arrays).
+
+```php
+<?php
+// Indexed array
+$fruits = ["Apple", "Banana", "Cherry"];
+// Associative array
+$person = ["name" => "John", "age" => 30, "city" => "New York"];
+// Multidimensional array
+$matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+?>
+```
+
+## File Handling
+
+Often need to open and process a file for different tasks. Php has seceral built in functons for creating, reading, uploading, and editing files.
+
+1. readfile(): Reads file and write it to the buffer
+2. fopen(): Open the file
+3. fread(): Read something from the file.
+4. fgets(): Read a specific string (line).
+5. fgetc(): Read a specific character.
+6. feofc(): End of the file.
+7. fclose(): Colse the file.
+8. unlink(): Delete the file.
+
+```php
+<?php
+echo readfile($filename.extension)
+echo unlink($filename)
+>
+```

@@ -14,7 +14,7 @@ This repository contains class practice files and assignments for learning core 
 ## Folder Structure
 
 - `html/` — all `.htm` practice pages
-- `css/` — `css.md`, `tut.css`
+- `css/` — `css.md`, `tut.css` and other `.htm` pages for learning css.
 - `js/` — `js.md`, `dom.md`, `jQuery.md`
 - `php/` — `php.md`
 - `xml/` — `xml.md`

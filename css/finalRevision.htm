@@ -1,0 +1,116 @@
+<!--Final CSS practice-->
+<!-- Remember in box: background-color: lightblue; box-shadow: 10px 10px 20px blue; border-radius: 50% -->
+<html>
+<head>
+<title> CSS </title>
+<style>
+	a{
+		color: orange;
+		text-decoration: none;
+	}
+	a:hover{
+		color: pink;
+	}
+	a:active{
+		color: blue;
+	}
+	a:visited{
+		color: green;
+	}
+
+	.box{
+		width: 100px;
+		height: 100px;
+		background-color: lightblue;
+		color: pink;
+		text-shadow: 10px 10px 20px red;
+		box-shadow: 10px 10px 20px blue;
+		border-radius: 50%;
+		transition: all 1s ease-in-out;
+	}
+	.box:hover{
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		box-shadow: 10px 10px 20px red;
+		border-radius: 10%;
+	}
+	.newspaper{
+		column-count: 3;
+		column-gap: 40px;
+		column-rule: 1px solid black;
+		text-align: justify;
+		font_family: georgia, TimesNewRoman;
+	}
+
+	.absolute{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: yellow;
+	}
+	.sticky{
+		position: sticky;
+		top: 50%;
+		background: green;
+		color: white;
+	}
+	.fixed{
+		position: fixed;
+		top: 40%;
+		left: 20px;
+		background: red;
+	}
+</style>
+</head>
+
+<body>
+
+<h1>Hyperlinks</h1>
+		<a href="www.google.com">Link 1</a>
+		<a href="linkedin.com">Link 2</a>
+		<a href="gmail.com">Link 3</a>
+		
+
+<div class="box"> This is a circular box</div>
+<article class="newspaper">
+<h3>.newspaper{</h3>
+<strong>column</strong>-count: 3;
+column-gap: 40px;
+column-rule: 1px solid black;
+text-align: justify;
+font_family: georgia, TimesNewRoman;
+}
+</article>
+<hr>
+<article>
+<h2> CSS position properties </h2>
+<h3 class="static"> Static (The default)</h3>
+<ul><li><strong>Logic: </strong>Elements follow the normal document flow.</li>
+<li><strong>Behaviour: </strong>Properties like top, bottom, left, right, z-index have no effect.</li>
+<li><strong>Use case: </strong>Resetting a position that was inherited or applied via another class.</li>
+</ul>
+<h3 class="relative"> Relative </h3>
+<ul><li><strong>Logic: </strong>Element positioned relative to its original normal position.</li>
+<li><strong>Behaviour: </strong>Setting top: 20px moves it 20 pixels down from where it should have been. Crucially, the gap where it used to be is preserved, other elements won't move to fill the space.</li>
+</ul>
+<h3 class="absolute">Absolute</h3>
+<ul><li><strong>Logic: </strong>Element is removed from normal document flow</li>
+<li><strong>Behaviour: </strong>Positions itself relative to it;s nearest positioned ancestor (ancestor with any position except static). If no such ancestor exists, uses document body.</li>
+<li><strong>Use case: </strong>Often used inside a <code>position: relative</code> container to pin an icon or a badge to a specific corner.</li>
+</ul>
+<h3 class="fixed">Fixed</h3>
+<ul><li><strong>Logic: </strong>Positioned relative to he viewport (browser window)</li>
+<li><strong>Behaviour: </strong>Stays in exact same spot even when the page is scrolled. Completely removed from document flow.</li>
+<li><strong>Use case: </strong>Navigatin bar or "back to top" buttons.</li>
+</ul>
+<h3 class="sticky">Sticky</h3>
+<ul><li><strong>Logic: </strong>Hybrid of relative and fixed</li>
+<li><strong>Behaviour: </strong>Acts like relative until user scrolls to a threshold.(eg top:0), at which point it acts as fixed inside it's parent container</li>
+<li><strong>Use case: </strong>Resetting a position that was inherited or applied via another class.</li>
+</ul>
+</article>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

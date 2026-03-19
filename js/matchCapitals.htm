@@ -1,0 +1,363 @@
+<!-- 2 lists: country and capital, user selects country and it's capital. If wrong choice, show "Incorrect Answer" and display right answer-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match The Following</title>
+</head>
+<body>
+    <label for="country">Select Country</label>
+    <select id="country" name="country">
+    <option value="">--Select Country--</option>
+    <option value="Afghanistan">Afghanistan</option>
+    <option value="Albania">Albania</option>
+    <option value="Algeria">Algeria</option>
+    <option value="Andorra">Andorra</option>
+    <option value="Angola">Angola</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Armenia">Armenia</option>
+    <option value="Australia">Australia</option>
+    <option value="Austria">Austria</option>
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="Belgium">Belgium</option>
+    <option value="Bhutan">Bhutan</option>
+    <option value="Brazil">Brazil</option>
+    <option value="Bulgaria">Bulgaria</option>
+    <option value="Canada">Canada</option>
+    <option value="China">China</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Croatia">Croatia</option>
+    <option value="Cuba">Cuba</option>
+    <option value="Czech Republic">Czech Republic</option>
+    <option value="Denmark">Denmark</option>
+    <option value="Egypt">Egypt</option>
+    <option value="Finland">Finland</option>
+    <option value="France">France</option>
+    <option value="Germany">Germany</option>
+    <option value="Greece">Greece</option>
+    <option value="Hungary">Hungary</option>
+    <option value="Iceland">Iceland</option>
+    <option value="India">India</option>
+    <option value="Indonesia">Indonesia</option>
+    <option value="Iran">Iran</option>
+    <option value="Iraq">Iraq</option>
+    <option value="Ireland">Ireland</option>
+    <option value="Israel">Israel</option>
+    <option value="Italy">Italy</option>
+    <option value="Japan">Japan</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Malaysia">Malaysia</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Nepal">Nepal</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="New Zealand">New Zealand</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="Norway">Norway</option>
+    <option value="Pakistan">Pakistan</option>
+    <option value="Philippines">Philippines</option>
+    <option value="Poland">Poland</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Qatar">Qatar</option>
+    <option value="Russia">Russia</option>
+    <option value="Saudi Arabia">Saudi Arabia</option>
+    <option value="Singapore">Singapore</option>
+    <option value="South Africa">South Africa</option>
+    <option value="South Korea">South Korea</option>
+    <option value="Spain">Spain</option>
+    <option value="Sri Lanka">Sri Lanka</option>
+    <option value="Sweden">Sweden</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="Thailand">Thailand</option>
+    <option value="Turkey">Turkey</option>
+    <option value="Ukraine">Ukraine</option>
+    <option value="United Arab Emirates">United Arab Emirates</option>
+    <option value="United Kingdom">United Kingdom</option>
+    <option value="United States">United States</option>
+    <option value="Vietnam">Vietnam</option>
+    </select>
+
+    <br><br>
+
+    <label for="capital">Select Capital</label>
+    <select id="capital" name="capital">
+    <option value="">--Select Capital--</option>
+    <option value="Kabul">Kabul</option>
+    <option value="Tirana">Tirana</option>
+    <option value="Algiers">Algiers</option>
+    <option value="Andorra la Vella">Andorra la Vella</option>
+    <option value="Luanda">Luanda</option>
+    <option value="Buenos Aires">Buenos Aires</option>
+    <option value="Yerevan">Yerevan</option>
+    <option value="Canberra">Canberra</option>
+    <option value="Vienna">Vienna</option>
+    <option value="Dhaka">Dhaka</option>
+    <option value="Brussels">Brussels</option>
+    <option value="Thimphu">Thimphu</option>
+    <option value="Brasilia">Brasilia</option>
+    <option value="Sofia">Sofia</option>
+    <option value="Ottawa">Ottawa</option>
+    <option value="Beijing">Beijing</option>
+    <option value="Bogota">Bogota</option>
+    <option value="Zagreb">Zagreb</option>
+    <option value="Havana">Havana</option>
+    <option value="Prague">Prague</option>
+    <option value="Copenhagen">Copenhagen</option>
+    <option value="Cairo">Cairo</option>
+    <option value="Helsinki">Helsinki</option>
+    <option value="Paris">Paris</option>
+    <option value="Berlin">Berlin</option>
+    <option value="Athens">Athens</option>
+    <option value="Budapest">Budapest</option>
+    <option value="Reykjavik">Reykjavik</option>
+    <option value="New Delhi">New Delhi</option>
+    <option value="Jakarta">Jakarta</option>
+    <option value="Tehran">Tehran</option>
+    <option value="Baghdad">Baghdad</option>
+    <option value="Dublin">Dublin</option>
+    <option value="Jerusalem">Jerusalem</option>
+    <option value="Rome">Rome</option>
+    <option value="Tokyo">Tokyo</option>
+    <option value="Nairobi">Nairobi</option>
+    <option value="Kuala Lumpur">Kuala Lumpur</option>
+    <option value="Mexico City">Mexico City</option>
+    <option value="Kathmandu">Kathmandu</option>
+    <option value="Amsterdam">Amsterdam</option>
+    <option value="Wellington">Wellington</option>
+    <option value="Abuja">Abuja</option>
+    <option value="Oslo">Oslo</option>
+    <option value="Islamabad">Islamabad</option>
+    <option value="Manila">Manila</option>
+    <option value="Warsaw">Warsaw</option>
+    <option value="Lisbon">Lisbon</option>
+    <option value="Doha">Doha</option>
+    <option value="Moscow">Moscow</option>
+    <option value="Riyadh">Riyadh</option>
+    <option value="Singapore">Singapore</option>
+    <option value="Pretoria">Pretoria</option>
+    <option value="Seoul">Seoul</option>
+    <option value="Madrid">Madrid</option>
+    <option value="Sri Jayawardenepura Kotte">Sri Jayawardenepura Kotte</option>
+    <option value="Stockholm">Stockholm</option>
+    <option value="Bern">Bern</option>
+    <option value="Bangkok">Bangkok</option>
+    <option value="Ankara">Ankara</option>
+    <option value="Kyiv">Kyiv</option>
+    <option value="Abu Dhabi">Abu Dhabi</option>
+    <option value="London">London</option>
+    <option value="Washington, D.C.">Washington, D.C.</option>
+    <option value="Hanoi">Hanoi</option>
+    </select>
+
+    <script>
+
+        const countryCapitals = {
+            Afghanistan: "Kabul",
+            Albania: "Tirana",
+            Algeria: "Algiers",
+            Andorra: "Andorra la Vella",
+            Angola: "Luanda",
+            Antigua_and_Barbuda: "Saint John's",
+            Argentina: "Buenos Aires",
+            Armenia: "Yerevan",
+            Australia: "Canberra",
+            Austria: "Vienna",
+            Azerbaijan: "Baku",
+            Bahamas: "Nassau",
+            Bahrain: "Manama",
+            Bangladesh: "Dhaka",
+            Barbados: "Bridgetown",
+            Belarus: "Minsk",
+            Belgium: "Brussels",
+            Belize: "Belmopan",
+            Benin: "Porto-Novo",
+            Bhutan: "Thimphu",
+            Bolivia: "Sucre",
+            Bosnia_and_Herzegovina: "Sarajevo",
+            Botswana: "Gaborone",
+            Brazil: "Brasilia",
+            Brunei: "Bandar Seri Begawan",
+            Bulgaria: "Sofia",
+            Burkina_Faso: "Ouagadougou",
+            Burundi: "Gitega",
+            Cambodia: "Phnom Penh",
+            Cameroon: "Yaounde",
+            Canada: "Ottawa",
+            Cape_Verde: "Praia",
+            Central_African_Republic: "Bangui",
+            Chad: "N'Djamena",
+            Chile: "Santiago",
+            China: "Beijing",
+            Colombia: "Bogota",
+            Comoros: "Moroni",
+            Congo_Democratic_Republic: "Kinshasa",
+            Congo_Republic: "Brazzaville",
+            Costa_Rica: "San Jose",
+            Croatia: "Zagreb",
+            Cuba: "Havana",
+            Cyprus: "Nicosia",
+            Czech_Republic: "Prague",
+            Denmark: "Copenhagen",
+            Djibouti: "Djibouti",
+            Dominica: "Roseau",
+            Dominican_Republic: "Santo Domingo",
+            Ecuador: "Quito",
+            Egypt: "Cairo",
+            El_Salvador: "San Salvador",
+            Equatorial_Guinea: "Malabo",
+            Eritrea: "Asmara",
+            Estonia: "Tallinn",
+            Eswatini: "Mbabane",
+            Ethiopia: "Addis Ababa",
+            Fiji: "Suva",
+            Finland: "Helsinki",
+            France: "Paris",
+            Gabon: "Libreville",
+            Gambia: "Banjul",
+            Georgia: "Tbilisi",
+            Germany: "Berlin",
+            Ghana: "Accra",
+            Greece: "Athens",
+            Grenada: "St. George's",
+            Guatemala: "Guatemala City",
+            Guinea: "Conakry",
+            Guinea_Bissau: "Bissau",
+            Guyana: "Georgetown",
+            Haiti: "Port-au-Prince",
+            Honduras: "Tegucigalpa",
+            Hungary: "Budapest",
+            Iceland: "Reykjavik",
+            India: "New Delhi",
+            Indonesia: "Jakarta",
+            Iran: "Tehran",
+            Iraq: "Baghdad",
+            Ireland: "Dublin",
+            Israel: "Jerusalem",
+            Italy: "Rome",
+            Jamaica: "Kingston",
+            Japan: "Tokyo",
+            Jordan: "Amman",
+            Kazakhstan: "Astana",
+            Kenya: "Nairobi",
+            Kiribati: "South Tarawa",
+            Korea_North: "Pyongyang",
+            Korea_South: "Seoul",
+            Kosovo: "Pristina",
+            Kuwait: "Kuwait City",
+            Kyrgyzstan: "Bishkek",
+            Laos: "Vientiane",
+            Latvia: "Riga",
+            Lebanon: "Beirut",
+            Lesotho: "Maseru",
+            Liberia: "Monrovia",
+            Libya: "Tripoli",
+            Liechtenstein: "Vaduz",
+            Lithuania: "Vilnius",
+            Luxembourg: "Luxembourg",
+            Madagascar: "Antananarivo",
+            Malawi: "Lilongwe",
+            Malaysia: "Kuala Lumpur",
+            Maldives: "Male",
+            Mali: "Bamako",
+            Malta: "Valletta",
+            Marshall_Islands: "Majuro",
+            Mauritania: "Nouakchott",
+            Mauritius: "Port Louis",
+            Mexico: "Mexico City",
+            Micronesia: "Palikir",
+            Moldova: "Chisinau",
+            Monaco: "Monaco",
+            Mongolia: "Ulaanbaatar",
+            Montenegro: "Podgorica",
+            Morocco: "Rabat",
+            Mozambique: "Maputo",
+            Myanmar: "Naypyidaw",
+            Namibia: "Windhoek",
+            Nauru: "Yaren",
+            Nepal: "Kathmandu",
+            Netherlands: "Amsterdam",
+            New_Zealand: "Wellington",
+            Nicaragua: "Managua",
+            Niger: "Niamey",
+            Nigeria: "Abuja",
+            North_Macedonia: "Skopje",
+            Norway: "Oslo",
+            Oman: "Muscat",
+            Pakistan: "Islamabad",
+            Palau: "Ngerulmud",
+            Panama: "Panama City",
+            Papua_New_Guinea: "Port Moresby",
+            Paraguay: "Asuncion",
+            Peru: "Lima",
+            Philippines: "Manila",
+            Poland: "Warsaw",
+            Portugal: "Lisbon",
+            Qatar: "Doha",
+            Romania: "Bucharest",
+            Russia: "Moscow",
+            Rwanda: "Kigali",
+            Saint_Kitts_and_Nevis: "Basseterre",
+            Saint_Lucia: "Castries",
+            Saint_Vincent_and_the_Grenadines: "Kingstown",
+            Samoa: "Apia",
+            San_Marino: "San Marino",
+            Sao_Tome_and_Principe: "Sao Tome",
+            Saudi_Arabia: "Riyadh",
+            Senegal: "Dakar",
+            Serbia: "Belgrade",
+            Seychelles: "Victoria",
+            Sierra_Leone: "Freetown",
+            Singapore: "Singapore",
+            Slovakia: "Bratislava",
+            Slovenia: "Ljubljana",
+            Solomon_Islands: "Honiara",
+            Somalia: "Mogadishu",
+            South_Africa: "Pretoria",
+            South_Sudan: "Juba",
+            Spain: "Madrid",
+            Sri_Lanka: "Sri Jayawardenepura Kotte",
+            Sudan: "Khartoum",
+            Suriname: "Paramaribo",
+            Sweden: "Stockholm",
+            Switzerland: "Bern",
+            Syria: "Damascus",
+            Taiwan: "Taipei",
+            Tajikistan: "Dushanbe",
+            Tanzania: "Dodoma",
+            Thailand: "Bangkok",
+            Timor_Leste: "Dili",
+            Togo: "Lome",
+            Tonga: "Nuku'alofa",
+            Trinidad_and_Tobago: "Port of Spain",
+            Tunisia: "Tunis",
+            Turkey: "Ankara",
+            Turkmenistan: "Ashgabat",
+            Tuvalu: "Funafuti",
+            Uganda: "Kampala",
+            Ukraine: "Kyiv",
+            United_Arab_Emirates: "Abu Dhabi",
+            United_Kingdom: "London",
+            United_States: "Washington, D.C.",
+            Uruguay: "Montevideo",
+            Uzbekistan: "Tashkent",
+            Vanuatu: "Port Vila",
+            Vatican_City: "Vatican City",
+            Venezuela: "Caracas",
+            Vietnam: "Hanoi",
+            Yemen: "Sana'a",
+            Zambia: "Lusaka",
+            Zimbabwe: "Harare"
+        };
+
+        let country= getElementById("country").value;
+        let capital= getElementById("capital").value;
+
+        if(!countryCapitals[country]===capital){
+            alert("Correct");
+        }else{
+            alert("Incorrect. Correct answer is: "+ countryCapitals[country]);
+        }
+    </script>
+</body>
+</html>

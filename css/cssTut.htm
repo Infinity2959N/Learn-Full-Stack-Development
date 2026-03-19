@@ -14,7 +14,7 @@
         .class-name{    
             color: green;
         }
-        /* Much higher priority */
+        /* Much higher priority: Not a good practice to use id, prefer class */
         #ids{
             color: aqua;
         }
@@ -26,6 +26,7 @@
             background-color: pink;
             border-radius: 10px 30px;
             box-shadow: 5px 5px 10px grey;
+            /*h_offset v_offset blur_radius spread_radius (optional) color */
         }
 
         /* Styling anchor tags: By default blue, after visiting purple, and on hover red */
@@ -54,7 +55,7 @@
             box-shadow: 6px 6px 20px magenta;
             border-radius: 5%; /* Becomes a square on hover */
             transform: /*rotate(45deg)*/ translate(100px, -200px);
-        }
+       }
     </style>
 
     <!--External CSS-->

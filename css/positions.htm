@@ -1,0 +1,56 @@
+<!--CSS final revision part 2-->
+<!--Positions-->
+<html>
+<head>
+	<style>
+		.box1{
+			background-color: aqua;
+			position: sticky;
+			top: 0;
+			z-index: 2;
+		}
+		.box2{
+			background-color: antiquewhite;
+			position: absoulte;
+			top: 0;
+			right: 0;
+		}
+		.box3{
+			background-color: azure;
+			position: relative;
+			top: 50px;
+			left: 34px;
+		}
+		.box4{
+			background-color: purple;
+			position: fixed;
+			top: 30px;
+			left: 30px;
+			z-index: 1;
+			/*higher z-index will be stacked at the top*/
+		}
+		.box{
+			height: 230px;
+			width:80vw;
+			padding: 3px;
+			margin: 3px;
+			border: 2px solid black;	
+		}
+		.parent{
+			padding: 43px;
+			margin: 34px;
+			border: 3px solid purple;
+			position: relative;
+		}
+	</style>
+
+</head>
+<body>	
+	<div class="parent">
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+		<div class="box box4"></div>
+	</div>
+</body>
+</html>

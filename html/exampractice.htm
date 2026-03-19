@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+	<head>
+	</head>
+	<body>
+<!-- Q1. Text Formatting Tags-->
+		<h1> Heading tag</h1>
+		<p> Paragraph tag </p>
+		<b> Bold </b>
+		<strong> Strong (same as bold) </strong>
+		<i> Italics </i>
+		<em> Emphasis (same as italics) </em>
+		<u> Underline </u>
+		<ins> Insert (same as underline) </ins>
+		<mark> Marked Tag (highlight) </mark>
+		<s> Strikethrough </s>
+		<del> Deleted (same as strikethrough) </del>
+		<a href= "www.google.com"> Anchor tag </a>
+		<sup> Superscript </sup>
+		<sub> Subscript </sub>
+		<marquee direction= "right"> Marquee tag (text moves from left to right (by default unless direction specified) </marquee>
+		<br> <!-- Line break-->
+
+<!-- Q2. Drawing shapes-->
+		<pre>
+		    *
+		   * *
+		  * * *
+		 * * * *
+		* * * * *
+		</pre>
+
+		<center>*</center>
+		<center>* *</center>
+		<center>* * *</center>
+		<center>* * * *</center>
+		<center>* * * * *</center>
+
+<!-- Q3. Table-->
+		<table border="1">
+			<thead>
+				<tr>
+					<th rowspan= "2"> Sr.No. </th>
+					<th rowspan= "2"> Course </th>
+					<th rowspan= "2"> Subject </th>
+					<th colspan= "2"> Marks </th>
+					<th colspan= "2"> Category </th>
+					<th rowspan= "2"> Practical/Theory </th>
+				</tr>
+				<tr>
+					<th> Internal </th>
+					<th> External </th>
+					<th> Internal </th>
+					<th> External </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="4">1</td>
+					<td rowspan="4">MBA</td>
+					<td>Management Accounting</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>Theory</td>
+				</tr>
+				<tr>
+					<td>Information Technology</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>T and P</td>
+				</tr>
+				<tr>
+					<td>Basics of Marketing</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>Theory</td>
+				</tr>
+				<tr>
+					<td>E-Commerce</td>
+					<td>50</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>-</td>
+					<td>Theory</td>
+				</tr>
+
+				<tr>
+					<td rowspan="6">2</td>
+					<td rowspan="6">MCM</td>
+					<td>Visual Basic</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>T and P</td>
+				</tr>
+				<tr>
+					<td>Internet Technology</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>T and P</td>
+				</tr>
+				<tr>
+					<td>Network Technology</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>Theory</td>
+				</tr>
+				<tr>
+					<td>VB.Net</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>Theory</td>
+				</tr>
+				<tr>
+					<td>Linux</td>
+					<td>30</td>
+					<td>70</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>T and P</td>
+				</tr>
+				<tr>
+					<td>ISA</td>
+					<td>50</td>
+					<td>-</td>
+					<td>✔</td>
+					<td>-</td>
+					<td>Theory</td>
+				</tr>
+			</tbody>
+		</table>
+
+<!-- Q4. Aligning images with hyperling-->
+		<table>
+			<tbody>
+				<tr>
+					<td> <a href= "vodafone.com"> <img src="vodafone.jpg" alt="Vodafone image"></a></td>
+					<td> <a href= "airtel.com"> <img src="airtel.jpg" alt="Airtel image"></a></td>
+					<td> <a href= "idea.com"> <img src="idea.jpg" alt="Idea image"></a></td>
+					<td> <a href= "jio.com"> <img src="jio.jpg" alt="Jio image"></a></td>
+				</tr>
+				<tr>
+					<td> <a href= "bsnl.com"> <img src="bsnl.jpg" alt="BSNL image"></a></td>
+					<td colspan="2"> Table with Images </td>
+					<td> <a href= "amazon.com"> <img src="amazon.jpg" alt="Amazon image"></a></td>
+				</tr>
+				<tr>
+					<td> <a href= "vodafone.com"> <img src="vodafone.jpg" alt="Vodafone image"></a></td>
+					<td> <a href= "vodafone.com"> <img src="vodafone.jpg" alt="Vodafone image"></a></td>
+					<td> <a href= "vodafone.com"> <img src="vodafone.jpg" alt="Vodafone image"></a></td>
+					<td> <a href= "vodafone.com"> <img src="vodafone.jpg" alt="Vodafone image"></a></td>
+				</tr>
+			</tbody>
+		</table>
+					
+<!-- Q5. Image Map (To be continued) -->
+		<strong> Image Map to be implemented </strong>
+
+<!-- Q6. Form-->
+		<form>
+			<fieldset>
+				<legend> Basic Information </legend>
+				Full Name
+				<input type= "text" id="name" name="full name">
+				<br>
+				Birth Date
+				<input type= "date" id= "date" name= "birthdate">
+				<br>
+				Gender
+				<input type= "radio" name="gender" id="male"> <label for="male">Male</label>
+				<input type= "radio" name="gender" id="female"> <label for="female">Female</label>
+				<input type= "radio" name="gender" id="other"> <label for="Other">Other</label>
+				<br>
+				Address
+				<input type="text" id="address" name="address">
+				<br>
+				Phone Number
+				<input type="number" id="ph" name="ph">
+			</fieldset>
+			<fieldset>
+				<legend> Extra Information </legend>
+				Interests:
+				<input type="checkbox" id="interest" name="books"> Books
+				<input type="checkbox" id="interest" name="movies"> Movies
+				<input type="checkbox" id="interest" name="videogames"> Videogames
+				<br>
+				Favourite Color:
+				<input type="color" name="color" id="color">
+			</fieldset>
+			<input type="submit">
+			<input type="reset">
+		</form>
+<!-- Q7. Hotel Registration Form-->
+		<form>
+			<fieldset>
+				<legend>Hotel Registration Form</legend>
+				<label for="name>Name</label>
+				<input type="text" id="name" name="name">
+				<br>
+				<label for="address">Permanent Address</label>
+				<input type="text" id="address" name="address">
+				<br>
+				<label for="age">Age</label>
+				<input type="number" id="age" name="age">
+				<br>
+				<label for="gender">Select Gender</label>
+				<input list="genderList" id="gender" name="gender">
+				<datalist id="genderList">
+					<option value="male"></option>
+					<option value="female"></option>
+				</datalist>
+				<br>
+				<label for="room">Room Type</label>
+				<input type="radio" id="ac" name="room">AC
+				<input type="radio" id="non-ac" name="room">Non AC
+				<input type="radio" id=deluxe" name="room">Deluxe
+			</fieldset>
+			<input type="submit">Submit Information
+			<input type="reset">Refill Form
+			<br>
+		</form>
+<!-- Q8. HTML5 semantic tags: video, audio, header, footer, nav, embed, datalist, bdi, article, output-->
+		<!--Video tags-->
+		<video controls autoplay muted loop width="500" height="200">
+			<source src="https://videosource.com">
+		</video>
+
+		<!--Audio-->
+		<audio controls loop>
+			<source src="audiosrc.com">
+		</audio>
+		
+		<!--Header and nav-->
+		<!--Nav is a semantic tag for SEO and accessibility: It is a swapper for implrtant navigation links. Default no  styling. Must use CSS to format it as a horizontal bar/vertical sidebar. drop down, etc-->
+		<header>
+			<nav>
+				<ul>
+					<li><a href=""> Login </a></li>
+					<li><a href=""> Sign up </a></li>
+				</ul>
+			</nav>
+		<header>
+
+		<!--Footer and nav-->
+		<footer>
+			<nav>
+				<ul>
+					<li> <a href="">Contact us</a></li>
+					<li> <a href=""> Profiles</a></li>
+				<ul>
+			</nav>
+		</footer>
+
+		<!-- Embed: Primary tags: iframe, video, audio, img and the generic embed tag-->
+		<embed src="content.pdf" type="application/pdf" width="500>
+		<!--void tag so no closing>
+		<br>
+		
+		<!--Datalist: To be used with input: Provides a list of predefined options-->
+		<label for="myBrowser"> Chose a browser from this list</label>
+		<input list="browsers" id="myBrowser" name="myBrowser">
+		<datalist id="browsers">
+			<option value="Chrome"></option>
+			<option value="Firefox"></option>
+			<option value="Safari"></option>
+		</datalist>
+		<br>
+
+		<label>Choose a Fruit</label>
+		<input type="text" list="fruit_options" placeholder="eg. Apple">
+		<datalist id="fruit_options">
+			<option value="Apple">
+			<option value="Banana">
+			<option value="Cherry">
+		</datalist>
+		<br>
+
+		<!--bdi: bi directional isolation: For languages like arabic-->
+		<bdi>Imagine this is written in Arabic</bdi> This is english.
+		<br>
+
+		<!--Article Tag: Semantic element to define independent, self contained content that can be distributed ir reused on its own-->
+		<article>
+			<h3> Article Heading</h3>
+			<p> This is a self contained Article</p>
+			<footer> Author: ABC</footer>
+		</article>
+		
+		<!--Output tag: Used to represent the result of a calculation of a user action within a document. Most effective when used with javascript-->
+		<output name= "result_name"></output>
+
+<!--Q9. HTML Page to create a list-->
+		<ol>
+			<li><strong>Programming Language</strong></li>
+				<ul>
+					<li><strong>Python</strong></li>
+						<ul>
+							<li>Frameworks</li>
+								<ol>
+									<li>Django</li>
+									<li>Flask</li>
+								</ol>
+							<li>Libraries</li>
+								<ul>
+									<li>NumPy</li>
+									<li>Pandas</li>
+									<li>Matplotlib</li>
+								</ul>
+						</ul>
+					<li><strong>Java</strong></li>
+						<ul>
+							<li>Core Concepts</li>
+							<li>Frameworks</li>
+						</ul>
+				</ul>
+			<li><strong>Web Development</strong></li>
+				<ol>
+					<li><strong>Frontend</strong></li>
+					<li><strong>Frontend</strong></li>
+				</ol>
+		</ol>
+		<!--ul type="x"	x=disk (default first), square, circle-->
+		<!--ol type="y"	y=1 (default), a, A, i, I-->
+		
+				
+	</body>
+</html>
